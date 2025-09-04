@@ -6,7 +6,7 @@ const users = [
   { id: 2, name: "Darth Vader", age: 45 },
   { id: 3, name: "Princess Leia", age: 23 },
   { id: 4, name: "Obi-Wan Kenobi", age: 57 },
-  { id: 5, name: "", age: 900 },
+  { id: 5, name: "Yoda", age: 900 },
   { id: 6, name: "Han Solo", age: 32 },
   { id: 7, name: "Chewbacca", age: 234 },
   { id: 8, name: "R2-D2", age: 33 },
@@ -96,12 +96,15 @@ let printErrorHandledCharNames = (array) => {
 
 // 6. Test your error handling by creating a second array that's intentionally broken (missing name properties) and passing it to your functions. Verify that your error handling works correctly and displays errors in the div with id "broken-array-errors"
 
-// test array 
+  // Create test array with missing values for name
 const testUserArray = [
   {id: 11, name: "", age: 27},
   {id: 12, name: "", age: 28},
   {id: 13, name: "", age: 100},
 ]
 
-// testing the error handling of the function 
-// printCharNames(testUserArray);
+  // get the brokenArray list and errors
+const brokenArrayList = document.getElementById("broken-array-list");
+const brokenArrayErrors = document.getElementById("broken-array-errors");
+
+  // testing the error handling of the function 
