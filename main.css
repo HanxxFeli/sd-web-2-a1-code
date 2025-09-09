@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 20;
+  line-height: 1.5;
   color: black;
   background-color: #f5f5f5;
   padding: 20px;
@@ -49,6 +49,7 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-left: 4px solid #667eea;
+  color: #f1f1f1;
 }
 
 section h2 {
@@ -87,13 +88,14 @@ ul {
 }
 
 ul li {
-  background: white;
+  background: #fff;
   margin-bottom: 0.5rem;
   padding: 0.75rem;
   border-radius: 4px;
   border-left: 3px solid #28a745;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  color: #333;
 }
 
 ul li:hover {
@@ -110,7 +112,7 @@ ul li:last-child {
   margin-top: 1rem;
 }
 
-#error-messages {
+#error-messages, #broken-array-errors {
   background-color: #f8d7da;
   color: #721c24;
   padding: 0.75rem;
