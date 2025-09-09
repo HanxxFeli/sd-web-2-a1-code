@@ -29,10 +29,10 @@ users.forEach(character => {
 
 // 2. Print out the names of characters whose age is less than 40 in the console, then render them in the HTML list with id "young-characters-list"
 
-// get the young char list element 
+  // get the young char list element 
 const youngCharList = document.getElementById("young-characters-list")
 
-// get each char with the age less than 40 then add to the html
+  // get each char with the age less than 40 then add to the html
 users.forEach(character => { 
   if (character.age < 40) { 
     if (character.name === "") { 
@@ -45,10 +45,10 @@ users.forEach(character => {
 
 // 3. Create a reusable function that takes any array and uses logic to render a list of character names in the HTML. Use this function to populate the list with id "function-list"
 
-// get the function list element 
+  // get the function list element 
 const funcList = document.getElementById("function-list")
 
-// create the function for logging char names in the array and adding to the HTML 
+  // create the function for logging char names in the array and adding to the HTML 
 let printCharNames = (array) => { 
   array.forEach(character => { 
       funcList.innerHTML += `<li>${character.name}</li>`
@@ -60,10 +60,10 @@ printCharNames(users); // call the function for checking console.log of char nam
 
 // 4. Create a function that takes an array and an age threshold parameter. The function should only display characters whose age is below the given number. Render results in the list with id "age-filter-list"
   
-// get the age filter list 
+  // get the age filter list 
 const ageFilterList = document.getElementById("age-filter-list")
   
-// create the function for filtering the age and getting the age based on the array provided
+  // create the function for filtering the age and getting the age based on the array provided
 let filterCharByAge = (array, age) => { 
   array.forEach(character => { 
     if (character.age < age) { 
@@ -93,7 +93,7 @@ filterCharByAge(users, 40); // call the function for checking age validation for
     { id: 9, name: "", age: 112 },
     { id: 10, name: "Padmé Amidala", age: 27 },
   ];
-// get the errorhandling list and messages elements
+  // get the errorhandling list and messages elements
 const errorHandlingList = document.getElementById("error-handling-list")
 const errorMessages = document.getElementById("error-messages")
 
@@ -138,4 +138,4 @@ let brokenArrayCharList = (array) => {
 };
 
   //testing the brokenArray function
-  brokenArrayCharList(testUserArray);
+brokenArrayCharList(testUserArray);
